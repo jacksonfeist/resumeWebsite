@@ -462,6 +462,102 @@ button:focus-visible {
   text-underline-offset: 4px;
 }
 
+.case-highlight {
+  border-left: 3px solid var(--accent);
+  padding-left: 16px;
+  color: var(--ink) !important;
+  font-weight: 500;
+}
+.case-highlight strong { color: var(--accent-deep); }
+
+.case-top { border-top: 2px solid var(--ink); }
+
+/* ---------- Studio roster ---------- */
+
+.roster {
+  border-top: 2px solid var(--ink);
+  padding-top: 46px;
+  margin-top: 4px;
+}
+
+.roster-head {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent-deep);
+  margin-bottom: 30px;
+}
+.roster-head span { color: var(--muted); }
+
+.roster-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 28px;
+}
+
+.game {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  background: var(--card);
+  border: 2px solid var(--ink);
+  box-shadow: 5px 5px 0 var(--ink);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.game:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0 var(--ink);
+}
+.game-flag { grid-column: span 3; }
+
+.game-media {
+  position: relative;
+  border-bottom: 2px solid var(--ink);
+}
+.game-media img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+.game-flag .game-media img { aspect-ratio: 16 / 9; }
+
+.game .stamp {
+  top: 10px;
+  right: 10px;
+  transform: rotate(3deg);
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 18px 20px 20px;
+}
+
+.game-kicker {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--accent-deep);
+  margin-bottom: 8px;
+}
+
+.game h4 {
+  font-weight: 800;
+  font-size: 1.4rem;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+.game-flag h4 { font-size: 1.6rem; }
+
+.game-info p { color: var(--ink-soft); font-size: 0.92rem; margin-bottom: 12px; }
+.game-info .tags { margin: auto 0 0; }
+.game-info .case-links { margin-top: 12px; font-size: 0.8rem; }
+
 /* ---------- Ledger ---------- */
 
 .ledger-hint {
@@ -803,6 +899,11 @@ button:focus-visible {
   .case:nth-of-type(odd) .case-media { order: 0; }
   .stamp { right: 8px; }
 
+  .roster-grid { grid-template-columns: repeat(2, 1fr); }
+  .game { grid-column: span 1; }
+  .game-flag { grid-column: span 2; }
+  .game .stamp { right: 8px; }
+
   .ledger-hint { display: none; }
   .ledger-row {
     grid-template-columns: 44px 1fr;
@@ -849,6 +950,9 @@ button:focus-visible {
     width: 100%;
   }
   .nav-menu .btn { margin-top: 12px; }
+
+  .roster-grid { grid-template-columns: 1fr; }
+  .game, .game-flag { grid-column: span 1; }
 
   .xp { grid-template-columns: 1fr; gap: 8px; }
   .xp-dates { padding-top: 0; }
