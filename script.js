@@ -1,9 +1,3 @@
-// Sticky-header hairline once the page scrolls
-const header = document.querySelector('.site-header');
-const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
-onScroll();
-window.addEventListener('scroll', onScroll, { passive: true });
-
 // Mobile nav toggle
 const toggle = document.querySelector('.nav-toggle');
 const menu = document.getElementById('nav-menu');
@@ -36,6 +30,31 @@ if (reduceMotion || !('IntersectionObserver' in window)) {
     { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
   );
   revealEls.forEach((el) => io.observe(el));
+}
+
+// Ledger peek: project image follows the cursor over its row
+const fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+if (fine && !reduceMotion) {
+  const peek = document.createElement('div');
+  peek.id = 'peek';
+  peek.setAttribute('aria-hidden', 'true');
+  const peekImg = document.createElement('img');
+  peekImg.alt = '';
+  peek.appendChild(peekImg);
+  document.body.appendChild(peek);
+
+  document.querySelectorAll('.ledger-row[data-img]').forEach((row) => {
+    row.addEventListener('mouseenter', () => {
+      peekImg.src = row.dataset.img;
+      peek.classList.add('show');
+    });
+    row.addEventListener('mousemove', (e) => {
+      const x = Math.min(e.clientX + 28, window.innerWidth - 270);
+      const y = Math.min(Math.max(e.clientY - 100, 12), window.innerHeight - 180);
+      peek.style.transform = `translate(${x}px, ${y}px) rotate(3deg)`;
+    });
+    row.addEventListener('mouseleave', () => peek.classList.remove('show'));
+  });
 }
 
 // Highlight the nav link for the section in view
