@@ -3,18 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jackson Feist, Full-Stack Software Engineer &amp; Consultant</title>
-  <meta name="description" content="Jackson Feist is a full-stack software engineer in Eugene, Oregon. Web apps, mobile apps, and games for startups, nonprofits, and regulated teams. Available for consulting.">
-  <meta property="og:title" content="Jackson Feist, Full-Stack Software Engineer &amp; Consultant">
-  <meta property="og:description" content="Web apps, mobile apps, and games: three commercial launches, apps through App Store review, and client platforms in production. Available for consulting.">
+  <title>Jackson Feist, Software Engineer for Small Businesses</title>
+  <meta name="description" content="I build software for small businesses. Most often that means taking over a process somebody is still doing by hand. Eugene, Oregon, working remotely anywhere.">
+  <link rel="canonical" href="https://jackfeist.com/">
+  <meta property="og:title" content="Jackson Feist, Software Engineer for Small Businesses">
+  <meta property="og:description" content="I build software for small businesses. Most jobs start with a pilot: fixed scope, fixed price, one to two weeks, run on a copy of your data. Available now.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jackfeist.com/">
   <meta property="og:image" content="https://jackfeist.com/assets/jackson.jpg">
+  <meta property="og:image:alt" content="Jackson Feist, software engineer in Eugene, Oregon">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jackson Feist, Software Engineer for Small Businesses">
+  <meta name="twitter:description" content="I build software for small businesses. Most jobs start with a pilot: fixed scope, fixed price, one to two weeks, run on a copy of your data. Available now.">
+  <meta name="twitter:image" content="https://jackfeist.com/assets/jackson.jpg">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23E8490F'/%3E%3Ctext x='32' y='44' font-family='Courier,monospace' font-size='30' font-weight='bold' fill='%23161410' text-anchor='middle'%3EJF%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://jackfeist.com/#jackson",
+        "name": "Jackson Feist",
+        "alternateName": "Jack Feist",
+        "jobTitle": "Software Engineer",
+        "description": "Full-stack software engineer and consultant who builds software for small businesses, most often taking over processes that are still done by hand.",
+        "url": "https://jackfeist.com/",
+        "email": "mailto:jacksonfeist@gmail.com",
+        "image": "https://jackfeist.com/assets/jackson.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Eugene",
+          "addressRegion": "OR",
+          "addressCountry": "US"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Oregon"
+        },
+        "knowsAbout": [
+          "React",
+          "TypeScript",
+          ".NET",
+          "Node.js",
+          "SQL",
+          "React Native",
+          "Business process automation"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/jacksonfeist",
+          "https://github.com/jacksonfeist"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://jackfeist.com/#practice",
+        "name": "Jackson Feist, software engineering and consulting",
+        "description": "Software built for small businesses: web applications, mobile apps, and taking over work that is currently done by hand. Engagements start with a fixed scope, fixed price pilot of one to two weeks.",
+        "url": "https://jackfeist.com/",
+        "image": "https://jackfeist.com/assets/jackson.jpg",
+        "provider": { "@id": "https://jackfeist.com/#jackson" },
+        "founder": { "@id": "https://jackfeist.com/#jackson" },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Eugene",
+          "addressRegion": "OR",
+          "addressCountry": "US"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Worldwide, remote"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -27,12 +94,12 @@
         <span></span><span></span>
       </button>
       <div class="nav-menu" id="nav-menu">
+        <a href="#pilot">Start here</a>
         <a href="#work">Work</a>
-        <a href="#services">Hire me</a>
-        <a href="#experience">Record</a>
-        <a href="#about">About</a>
+        <a href="#build">What I build</a>
+        <a href="#record">Record</a>
         <a href="#contact">Contact</a>
-        <a class="btn btn-nav" href="mailto:jacksonfeist@gmail.com?subject=Project%20inquiry" target="_blank" rel="noopener">Email me</a>
+        <a class="btn btn-nav" href="mailto:jacksonfeist@gmail.com?subject=Project%20inquiry">Email me</a>
       </div>
     </nav>
   </header>
@@ -43,360 +110,352 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="kicker">Full-stack engineer <b>&#9733;</b> Eugene, Oregon <b>&#9733;</b> takes consulting work</p>
-          <h1><span>Jackson</span> <span class="h1-accent">Feist</span></h1>
+          <p class="kicker">Jackson Feist <b>&#9733;</b> software engineer <b>&#9733;</b> Eugene, Oregon</p>
+          <h1><span>I build software for</span> <span class="h1-accent">small businesses.</span></h1>
           <p class="hero-lede">
-            I build web apps, mobile apps, and video games. So far that adds up to three
-            commercial game launches, a title live on Steam, and more than 5,000 app
-            downloads. Right now I engineer web products at Cemental Software, and I
-            still run <a href="https://inorganicgames.com" target="_blank" rel="noopener noreferrer">Inorganic&nbsp;Games</a>,
-            the studio I founded in 2023. I take a few consulting projects a year, and the
-            first conversation costs nothing.
+            The thing I get asked for most is taking over whatever process somebody
+            is still doing by hand. I am available now and taking on new work, and
+            most jobs start with a paid pilot that runs one to two weeks.
           </p>
           <div class="hero-actions">
-            <a class="btn" href="mailto:jacksonfeist@gmail.com?subject=Project%20inquiry" target="_blank" rel="noopener">Email me about a project</a>
-            <a class="btn btn-ghost" href="#work">See the work</a>
-            <a class="link-quiet" href="Resume.pdf" target="_blank" rel="noopener">R&eacute;sum&eacute; (PDF) &#8599;</a>
+            <a class="btn" href="mailto:jacksonfeist@gmail.com?subject=Project%20inquiry">Email me about your project</a>
+            <a class="btn btn-ghost" href="#pilot">How a pilot works</a>
           </div>
         </div>
         <figure class="snapshot">
-          <img src="assets/jackson.jpg" alt="Jackson Feist leaning against a mossy tree, smiling at the camera">
-          <figcaption>the consultant, pictured with a tree</figcaption>
+          <img src="assets/jackson.jpg" alt="Jackson Feist standing beside a mossy tree, smiling at the camera" width="720" height="900" fetchpriority="high">
+          <figcaption>Jackson Feist, Eugene, Oregon</figcaption>
         </figure>
       </div>
     </section>
 
-    <!-- ============ TICKER ============ -->
-    <div class="ticker" role="region" aria-label="Highlights">
-      <div class="ticker-inner">
-        <p class="ticker-track">
-          <span>3 commercial game launches</span><b>&#9733;</b>
-          <span>5,000+ app downloads</span><b>&#9733;</b>
-          <span>led development teams of up to ten</span><b>&#9733;</b>
-          <span>2 intern cohorts mentored</span><b>&#9733;</b>
-          <span>shipped on Steam and the App Store</span><b>&#9733;</b>
-          <span>consulting slots open</span><b>&#9733;</b>
-        </p>
-        <p class="ticker-track" aria-hidden="true">
-          <span>3 commercial game launches</span><b>&#9733;</b>
-          <span>5,000+ app downloads</span><b>&#9733;</b>
-          <span>led development teams of up to ten</span><b>&#9733;</b>
-          <span>2 intern cohorts mentored</span><b>&#9733;</b>
-          <span>shipped on Steam and the App Store</span><b>&#9733;</b>
-          <span>consulting slots open</span><b>&#9733;</b>
+    <!-- ============ PROOF STRIP ============ -->
+    <div class="proof-strip" role="region" aria-label="Highlights">
+      <div class="container">
+        <p class="proof-track">
+          <span>Available now</span><b aria-hidden="true">&#9733;</b>
+          <span>A live platform built for a nonprofit</span><b aria-hidden="true">&#9733;</b>
+          <span>5,000+ app downloads</span><b aria-hidden="true">&#9733;</b>
+          <span>Four apps through App Store review</span><b aria-hidden="true">&#9733;</b>
+          <span>A game published on Steam</span><b aria-hidden="true">&#9733;</b>
+          <span>Led engineering teams of up to ten</span>
         </p>
       </div>
     </div>
 
-    <!-- ============ SELECTED WORK ============ -->
-    <section class="section" id="work">
+    <!-- ============ PILOT ============ -->
+    <section class="section section-tint" id="pilot">
       <div class="container">
         <div class="section-head">
           <span class="sec-num">01</span>
-          <h2 class="sec-title">Selected work</h2>
+          <h2 class="sec-title">Start with a pilot</h2>
         </div>
+        <p class="section-lede">
+          Almost every job with me starts the same way. You pick one task that eats
+          the most time, and I build the piece of software that does it. It is small
+          enough to finish quickly and small enough for you to judge the result
+          yourself instead of taking my word for it.
+        </p>
 
-        <!-- Inorganic Games: the studio -->
-        <article class="case reveal">
-          <div class="case-media">
-            <img src="assets/inorganic-games.png" alt="Inorganic Games homepage: a real game studio that builds playable ads" loading="lazy">
-            <span class="stamp">Ongoing</span>
-          </div>
-          <div class="case-body">
-            <p class="case-kicker">Founder &amp; lead developer / 2023&ndash;present</p>
-            <h3>Inorganic Games</h3>
+        <ol class="pilot-grid">
+          <li class="pilot">
+            <span class="pilot-num">01</span>
+            <h3>Fixed scope, fixed price, one to two weeks</h3>
             <p>
-              I founded Inorganic Games in 2023 and I still run it. Three commercial
-              releases, a game live on Steam, and a studio that now builds playable ads
-              for mobile user-acquisition teams: real gameplay on every ad network, not
-              video pretending to be gameplay.
+              Before I start, I write down exactly what the software will do and quote
+              one price for it. The price does not move after that, and the work is
+              finished inside one to two weeks.
             </p>
-            <p class="case-highlight">
-              The part I'm proudest of: I built and mentored <strong>two full 12-week
-              internship cohorts</strong>, teams of up to nine, and carried every one
-              of them through a complete release cycle.
+          </li>
+          <li class="pilot">
+            <span class="pilot-num">02</span>
+            <h3>It runs on a copy of your data</h3>
+            <p>
+              I work from a copy of your records, never the originals. Nothing touches
+              the system you use every day until you have watched the new thing do the
+              job correctly and told me you are satisfied with it.
             </p>
-            <ul class="tags">
-              <li>Unity</li><li>C#</li><li>Team leadership</li><li>Production</li><li>Mentorship</li>
-            </ul>
-            <p class="case-links">
-              <a href="https://inorganicgames.com" target="_blank" rel="noopener noreferrer">inorganicgames.com &#8599;</a>
+          </li>
+          <li class="pilot">
+            <span class="pilot-num">03</span>
+            <h3>If it does not save the hours I expect, you do not pay for phase two</h3>
+            <p>
+              I tell you up front how much time a week I expect this to give back. If
+              the pilot does not deliver that, there is no second phase to pay for. You
+              keep what was built, and that is where it ends.
             </p>
-          </div>
-        </article>
+          </li>
+          <li class="pilot">
+            <span class="pilot-num">04</span>
+            <h3>The last 10 to 15 percent still needs a person</h3>
+            <p>
+              In this kind of work there are always cases the software should not decide
+              on its own. Usually 10 to 15 percent of them. Those get set aside on a
+              short list for a person to handle, rather than guessed at.
+            </p>
+          </li>
+        </ol>
 
-        <!-- Titles out of the studio -->
-        <div class="roster reveal">
-          <p class="roster-head">Titles out of the studio <span aria-hidden="true">&#8600;</span></p>
-          <div class="roster-grid">
-
-            <article class="game game-flag">
-              <div class="game-media">
-                <img src="assets/purrfect-alchemy.jpg" alt="Purrfect Alchemy, a local-multiplayer wave-survival game on Steam" loading="lazy">
-                <span class="stamp">On Steam now</span>
-              </div>
-              <div class="game-info">
-                <p class="game-kicker">Flagship / PC release</p>
-                <h4>Purrfect Alchemy</h4>
-                <p>
-                  A local-multiplayer wave-survival game, live on Steam right now. Players
-                  brew potions and hold off waves together on one couch.
-                </p>
-                <ul class="tags"><li>Unity</li><li>C#</li><li>Steam</li></ul>
-                <p class="case-links">
-                  <a href="https://store.steampowered.com/app/3124780/Purrfect_Alchemy/" target="_blank" rel="noopener noreferrer">Steam page &#8599;</a>
-                </p>
-              </div>
-            </article>
-
-            <article class="game game-flag">
-              <div class="game-media">
-                <img src="assets/man-hunt.jpg" alt="MAN_HUNT, a multiplayer location-tracking mobile game" loading="lazy">
-                <span class="stamp">5,000+ downloads</span>
-              </div>
-              <div class="game-info">
-                <p class="game-kicker">Flagship / mobile release</p>
-                <h4>MAN_HUNT</h4>
-                <p>
-                  Real-life tag where everyone's phone is the map. React Native and Firebase
-                  kept live location in sync with people sprinting through parking lots. Passed
-                  App Store review and picked up more than 5,000 downloads.
-                </p>
-                <ul class="tags"><li>React Native</li><li>Firebase</li><li>Real-time sync</li></ul>
-                <p class="case-links">
-                  <a href="https://apps.apple.com/us/app/man-hunt/id6473125600" target="_blank" rel="noopener noreferrer">App Store &#8599;</a>
-                </p>
-              </div>
-            </article>
-
-            <article class="game">
-              <div class="game-media">
-                <img src="assets/writhe.jpg" alt="Writhe, a top-down rogue-lite shooter" loading="lazy">
-              </div>
-              <div class="game-info">
-                <h4>Writhe</h4>
-                <p>Top-down rogue-lite shooter. Led the ten-person team that built it.</p>
-                <ul class="tags"><li>Unity</li><li>C#</li></ul>
-                <p class="case-links">
-                  <a href="https://apps.apple.com/us/app/writhe/id6464530992" target="_blank" rel="noopener noreferrer">App Store &#8599;</a>
-                </p>
-              </div>
-            </article>
-
-            <article class="game">
-              <div class="game-media">
-                <img src="assets/ruff-rescue.jpg" alt="Ruff Rescue, a dog-shelter management sim" loading="lazy">
-              </div>
-              <div class="game-info">
-                <h4>Ruff Rescue</h4>
-                <p>Dog-shelter management sim where the NPCs talk back, courtesy of an LLM.</p>
-                <ul class="tags"><li>Unity</li><li>C#</li></ul>
-                <p class="case-links">
-                  <a href="https://apps.apple.com/us/app/ruff-rescue-shelter/id6479341501" target="_blank" rel="noopener noreferrer">App Store &#8599;</a>
-                </p>
-              </div>
-            </article>
-
-            <article class="game">
-              <div class="game-media">
-                <img src="assets/sonic-charades.jpg" alt="Sonic Charades, a party charades game" loading="lazy">
-              </div>
-              <div class="game-info">
-                <h4>Sonic Charades</h4>
-                <p>Charades party game, built in React Native and shipped through App Store review.</p>
-                <ul class="tags"><li>React Native</li></ul>
-                <p class="case-links">
-                  <a href="https://apps.apple.com/us/app/sonic-charades/id6480328193" target="_blank" rel="noopener noreferrer">App Store &#8599;</a>
-                </p>
-              </div>
-            </article>
-
-          </div>
+        <div class="cta-strip">
+          <p>Tell me the one task you would hand off first. If a pilot is the wrong fit for it, I will say so and tell you what I would do instead.</p>
+          <a class="btn btn-dark" href="mailto:jacksonfeist@gmail.com?subject=Pilot%20inquiry">Email me about a pilot</a>
         </div>
+      </div>
+    </section>
 
-        <!-- Secure Fields for Jira -->
-        <article class="case case-top reveal">
-          <div class="case-media">
-            <img src="assets/secure-fields.png" alt="Secure Fields for Jira, field-level security for regulated teams" loading="lazy">
-            <span class="stamp">Launching soon</span>
-          </div>
-          <div class="case-body">
-            <p class="case-kicker">Jira app / Atlassian Forge</p>
-            <h3>Secure Fields for Jira</h3>
-            <p>
-              Healthcare, legal, and finance teams keep sensitive values in Jira fields
-              that were never built to protect them. Secure Fields keeps those values out
-              of Jira's data layer entirely: they live in Forge storage on Atlassian's
-              platform and render only for the groups and project roles you allow.
-              Everywhere else (REST, JQL, CSV export) sees a marker token instead of the
-              value, and every read and write is checked server-side, deny by default.
-            </p>
-            <p>
-              I designed and built it solo: the app, the threat model, the write-vector
-              test suites, and the Marketplace listing.
-            </p>
-            <ul class="tags">
-              <li>TypeScript</li><li>React</li><li>Atlassian Forge</li><li>Jira</li><li>Security</li>
-            </ul>
-          </div>
-        </article>
+    <!-- ============ WORK ============ -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-head">
+          <span class="sec-num">02</span>
+          <h2 class="sec-title">Work</h2>
+        </div>
 
         <!-- Boon.art -->
-        <article class="case reveal">
+        <article class="case">
           <div class="case-media">
-            <img src="assets/boon.jpg" alt="Boon, artist opportunities and open calls platform" loading="lazy">
+            <img src="assets/boon.jpg" alt="Boon, a website that collects opportunities for artists in one place" loading="lazy" width="1400" height="510">
             <span class="stamp">Live</span>
           </div>
           <div class="case-body">
-            <p class="case-kicker">Oregon Software Consulting / web platform</p>
+            <p class="case-kicker">Web platform / built for a nonprofit</p>
             <h3>Boon.art</h3>
             <p>
-              Artists spend hours every week hunting for grants, residencies, and open
-              calls. Boon does the hunting for them. I architected and built it at Oregon
-              Software Consulting for a nonprofit client: Next.js, TypeScript, and SQL,
-              with a scraping pipeline that gathers new opportunities automatically, plus
-              filtering and calendar sync so deadlines stop sneaking past people.
+              Artists lose hours every week hunting for grants, residencies, and open
+              calls one organization at a time. Boon gathers all of it into one place
+              and keeps the list up to date on its own, so nobody has to go collect it
+              by hand and deadlines stop slipping by unnoticed.
             </p>
-            <ul class="tags">
-              <li>Next.js</li><li>TypeScript</li><li>SQL</li><li>Web scraping</li>
-            </ul>
+            <p>
+              I designed and built it for a nonprofit client while I was a product team
+              lead at Oregon Software Consulting. The site is public and running now.
+              This is the closest thing on the page to the work I get asked for most: a
+              job that used to be done by hand, now done by software.
+            </p>
             <p class="case-links">
               <a href="https://www.boon.art" target="_blank" rel="noopener noreferrer">boon.art &#8599;</a>
             </p>
           </div>
         </article>
+
+        <!-- App Store apps -->
+        <article class="case">
+          <div class="case-media">
+            <img src="assets/man-hunt.jpg" alt="MAN_HUNT, a mobile game where every player's phone shows a live map" loading="lazy" width="1400" height="795">
+            <span class="stamp">5,000+ downloads</span>
+          </div>
+          <div class="case-body">
+            <p class="case-kicker">Mobile / four apps on the App Store</p>
+            <h3>Apps that made it through Apple</h3>
+            <p>
+              Four apps I built or led are live on the App Store, each one taken through
+              Apple's review process from the first line of code to the finished
+              listing. The most downloaded of them, MAN_HUNT, has passed 5,000
+              downloads. It is real-life tag where every player's phone shows a live map,
+              which meant keeping dozens of moving people in sync without draining their
+              batteries.
+            </p>
+            <p class="case-links">
+              <a href="https://apps.apple.com/us/app/man-hunt/id6473125600" target="_blank" rel="noopener noreferrer">MAN_HUNT &#8599;</a>
+              <a href="https://apps.apple.com/us/app/writhe/id6464530992" target="_blank" rel="noopener noreferrer">Writhe &#8599;</a>
+              <a href="https://apps.apple.com/us/app/ruff-rescue-shelter/id6479341501" target="_blank" rel="noopener noreferrer">Ruff Rescue Shelter &#8599;</a>
+              <a href="https://apps.apple.com/us/app/sonic-charades/id6480328193" target="_blank" rel="noopener noreferrer">Sonic Charades &#8599;</a>
+            </p>
+          </div>
+        </article>
+
+        <!-- Secure Fields for Jira -->
+        <article class="case">
+          <div class="case-media">
+            <img src="assets/secure-fields.png" alt="Secure Fields for Jira, which hides sensitive values from everyone except named people" loading="lazy" width="960" height="600">
+            <span class="stamp">In Marketplace review</span>
+          </div>
+          <div class="case-body">
+            <p class="case-kicker">Jira app / Atlassian Forge</p>
+            <h3>Secure Fields for Jira</h3>
+            <p>
+              Teams in healthcare, legal, and finance often have to track work in the
+              same place as sensitive information that most of their coworkers are not
+              allowed to see. Secure Fields keeps those values visible only to the
+              people and roles you name, and it checks every single request against that
+              list instead of trusting the screen it came from.
+            </p>
+            <p>
+              I built it on my own: the app itself, the security testing, and the store
+              listing. It is finished and currently in review at the Atlassian
+              Marketplace, so it is not available to install yet.
+            </p>
+          </div>
+        </article>
+
+        <!-- Steam game -->
+        <article class="case">
+          <div class="case-media">
+            <img src="assets/purrfect-alchemy.jpg" alt="Purrfect Alchemy, a couch multiplayer game published on Steam" loading="lazy" width="1400" height="795">
+            <span class="stamp">On Steam</span>
+          </div>
+          <div class="case-body">
+            <p class="case-kicker">Published game / PC</p>
+            <h3>Purrfect Alchemy</h3>
+            <p>
+              A couch multiplayer game published on Steam, where players brew potions
+              together and hold off waves of monsters on one screen. Shipping a game on
+              a storefront that strangers pay for is its own kind of proof: it either
+              works on hardware you have never seen, or you hear about it that day.
+            </p>
+            <p class="case-links">
+              <a href="https://store.steampowered.com/app/3124780/Purrfect_Alchemy/" target="_blank" rel="noopener noreferrer">Steam page &#8599;</a>
+            </p>
+          </div>
+        </article>
+
+        <!-- Inorganic Games -->
+        <article class="case">
+          <div class="case-media">
+            <img src="assets/inorganic-games.png" alt="The Inorganic Games homepage" loading="lazy" width="1280" height="800">
+            <span class="stamp">Ongoing</span>
+          </div>
+          <div class="case-body">
+            <p class="case-kicker">Founder and lead developer / 2023 to now</p>
+            <h3>Inorganic Games</h3>
+            <p>
+              I started Inorganic Games in 2023 and I still run it. Three commercial
+              releases have come out of it, and it now builds playable ads for companies
+              that market mobile apps.
+            </p>
+            <p class="case-highlight">
+              I have led engineering teams of up to <strong>ten people</strong>, and
+              carried <strong>two full twelve-week internship groups</strong> through a
+              complete release.
+            </p>
+            <p class="case-links">
+              <a href="https://inorganicgames.com" target="_blank" rel="noopener noreferrer">inorganicgames.com &#8599;</a>
+            </p>
+          </div>
+        </article>
       </div>
     </section>
 
-    <!-- ============ LEDGER ============ -->
-    <section class="section section-tint">
+    <!-- ============ WHAT I BUILD ============ -->
+    <section class="section section-tint" id="build">
       <div class="container">
         <div class="section-head">
-          <span class="sec-num">02</span>
+          <span class="sec-num">03</span>
+          <h2 class="sec-title">What I build</h2>
+        </div>
+        <p class="section-lede">
+          I work alone, so you deal with the person writing the software the whole way
+          through: the first conversation, the build, and everything after it goes live.
+        </p>
+        <div class="svc-list">
+          <article class="svc">
+            <span class="svc-num">A</span>
+            <div>
+              <h3>Work that is done by hand today</h3>
+              <p>The copying, the checking, the re-typing of the same information into a second place. I build the software that does it instead, and flag the cases that still need a person.</p>
+            </div>
+          </article>
+          <article class="svc">
+            <span class="svc-num">B</span>
+            <div>
+              <h3>Web applications</h3>
+              <p>Complete tools that run in a browser, from what your staff or customers see down to the database behind it. Built, launched, and kept running.</p>
+            </div>
+          </article>
+          <article class="svc">
+            <span class="svc-num">C</span>
+            <div>
+              <h3>Mobile apps</h3>
+              <p>Apps for iPhone and Android, taken all the way through the App Store review that stops most projects, which I have done four times.</p>
+            </div>
+          </article>
+          <article class="svc">
+            <span class="svc-num">D</span>
+            <div>
+              <h3>Games and playable ads</h3>
+              <p>Published games, and playable ads for companies marketing mobile apps. Useful for training and marketing as well as entertainment.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EVERYTHING ELSE ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="sec-num">04</span>
           <h2 class="sec-title">Everything else</h2>
         </div>
-        <p class="ledger-hint" aria-hidden="true">hover a row to peek</p>
         <ul class="ledger">
-          <li class="ledger-row reveal" data-img="assets/sidewalk-soccer.jpg">
+          <li class="ledger-row">
             <span class="ledger-num">01</span>
             <h3>Sidewalk Soccer</h3>
-            <p>3D endless runner with procedural generation. CTO of the LLC; helped land its publishing deal.</p>
+            <p>3D endless runner that builds its own levels as you play. I was CTO of the company and helped land its publishing deal.</p>
             <span class="ledger-meta">Unity / C#</span>
           </li>
-          <li class="ledger-row reveal" data-img="assets/tntc.jpg">
+          <li class="ledger-row">
             <span class="ledger-num">02</span>
             <h3><a href="https://www.trynewthingsclub.com/" target="_blank" rel="noopener noreferrer">Try New Things Club &#8599;</a></h3>
-            <p>Community site that dares people out of their routine: challenges, progress tracking, sharing.</p>
+            <p>Community site that dares people out of their routine, with challenges, progress tracking, and sharing.</p>
             <span class="ledger-meta">Web</span>
           </li>
-          <li class="ledger-row reveal" data-img="assets/lmp.jpg">
+          <li class="ledger-row">
             <span class="ledger-num">03</span>
             <h3><a href="https://letmepark.app/en/moevego" target="_blank" rel="noopener noreferrer">Let Me Park / MoeveGo &#8599;</a></h3>
-            <p>Product and marketing pages for a Madrid parking startup, written in TypeScript and in Spanish.</p>
+            <p>Product and marketing pages for a parking startup in Madrid, written in TypeScript and in Spanish.</p>
             <span class="ledger-meta">React / TS</span>
           </li>
-          <li class="ledger-row reveal" data-img="assets/ai-drive-thru.jpg">
+          <li class="ledger-row">
             <span class="ledger-num">04</span>
             <h3>AI Drive-Thru</h3>
-            <p>Voice ordering prototype that turns spoken orders into structured tickets with the Claude API. Works on any menu.</p>
+            <p>Voice ordering prototype that turns a spoken order into a ticket the kitchen can read. Works with any menu.</p>
             <span class="ledger-meta">Python</span>
           </li>
-          <li class="ledger-row reveal" data-img="assets/neural-network.jpg">
+          <li class="ledger-row">
             <span class="ledger-num">05</span>
-            <h3>Image recognition CNN</h3>
-            <p>Convolutional network trained on CIFAR-10, built from scratch to learn how classification actually works.</p>
+            <h3>Image recognition model</h3>
+            <p>Built from scratch, without a library doing the hard part, to understand exactly how the classification works.</p>
             <span class="ledger-meta">PyTorch</span>
           </li>
         </ul>
       </div>
     </section>
 
-    <!-- ============ SERVICES ============ -->
-    <section class="section" id="services">
+    <!-- ============ RECORD ============ -->
+    <section class="section section-tint" id="record">
       <div class="container">
         <div class="section-head">
-          <span class="sec-num">03</span>
-          <h2 class="sec-title">Hire me</h2>
-        </div>
-        <p class="section-lede">
-          I work with a small number of clients at a time and stay from the first
-          conversation through launch: scoping, architecture, development, deployment.
-        </p>
-        <div class="svc-list">
-          <article class="svc reveal">
-            <span class="svc-num">A</span>
-            <div>
-              <h3>Web applications</h3>
-              <p>Complete platforms, from the React and TypeScript front end to the .NET or Node services and SQL behind it, deployed and monitored.</p>
-            </div>
-            <p class="svc-stack">React / TypeScript / Next.js / .NET / Node / SQL</p>
-          </article>
-          <article class="svc reveal">
-            <span class="svc-num">B</span>
-            <div>
-              <h3>Mobile apps</h3>
-              <p>Cross-platform apps carried all the way through App Store review, a gate I've cleared twice. Real-time features, auth, analytics.</p>
-            </div>
-            <p class="svc-stack">React Native / Firebase / Swift</p>
-          </article>
-          <article class="svc reveal">
-            <span class="svc-num">C</span>
-            <div>
-              <h3>Games &amp; playables</h3>
-              <p>Commercial games and playable ads for marketing, training, or fun. Real engines, shipped on Steam and the App Store.</p>
-            </div>
-            <p class="svc-stack">Unity / C#</p>
-          </article>
-          <article class="svc reveal">
-            <span class="svc-num">D</span>
-            <div>
-              <h3>Automation &amp; AI</h3>
-              <p>Scrapers, LLM features, and Jira apps on Atlassian Forge. The kind of software nobody sees and everybody misses when it breaks.</p>
-            </div>
-            <p class="svc-stack">Python / Claude API / Forge / AWS</p>
-          </article>
-        </div>
-        <div class="cta-strip reveal">
-          <p>Tell me what you're trying to build. If I'm the wrong person for it, I'll say so and point you at someone better.</p>
-          <a class="btn btn-dark" href="mailto:jacksonfeist@gmail.com?subject=Project%20inquiry" target="_blank" rel="noopener">Get in touch</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ EXPERIENCE ============ -->
-    <section class="section section-tint" id="experience">
-      <div class="container">
-        <div class="section-head">
-          <span class="sec-num">04</span>
+          <span class="sec-num">05</span>
           <h2 class="sec-title">The record</h2>
         </div>
         <div class="xp-layout">
           <ol class="xp-list">
-            <li class="xp reveal">
-              <p class="xp-dates">Oct 2025<br>to now</p>
-              <div>
-                <h3>Full-Stack Software Engineer</h3>
-                <p class="xp-org">Cemental Software / Eugene, OR</p>
-                <p>Building web products that have to survive contact with real users: React and TypeScript frontends, .NET services behind them.</p>
-              </div>
-            </li>
-            <li class="xp reveal">
+            <li class="xp">
               <p class="xp-dates">Aug 2023<br>to now</p>
               <div>
                 <h3>Founder &amp; Lead Developer</h3>
                 <p class="xp-org">Inorganic Games / Eugene, OR</p>
-                <p>Three commercial launches and counting. I run production, recruiting, and marketing, write most of the C# myself, and have mentored two full 12-week internship cohorts, teams of up to nine, through complete release cycles.</p>
+                <p>Three commercial releases and counting. I run production, recruiting, and marketing, write most of the code myself, and have carried two full twelve-week internship groups through complete release cycles.</p>
               </div>
             </li>
-            <li class="xp reveal">
+            <li class="xp">
+              <p class="xp-dates">Oct 2025<br>to Jun 2026</p>
+              <div>
+                <h3>Full-Stack Software Engineer</h3>
+                <p class="xp-org">Cemental Software / Eugene, OR</p>
+                <p>Built web products that had to survive contact with real users: React and TypeScript in front, .NET services behind them.</p>
+              </div>
+            </li>
+            <li class="xp">
               <p class="xp-dates">Mar 2024<br>to Jun 2025</p>
               <div>
                 <h3>Product Team Lead</h3>
                 <p class="xp-org">Oregon Software Consulting / Eugene, OR</p>
-                <p>Led development teams delivering full-stack work for multiple clients, first meeting through deployment. Boon.art, above, was one of them.</p>
+                <p>Led development teams delivering full-stack work for several clients, first meeting through deployment. Boon.art, above, was one of them.</p>
               </div>
             </li>
-            <li class="xp reveal">
+            <li class="xp">
               <p class="xp-dates">Jan 2025<br>to Mar 2025</p>
               <div>
                 <h3>Software Development Intern</h3>
@@ -404,7 +463,7 @@
                 <p>Shipped product site pages in TypeScript and React, and did the whole job in Spanish, including translating the site.</p>
               </div>
             </li>
-            <li class="xp reveal">
+            <li class="xp">
               <p class="xp-dates">Jan 2022<br>to Aug 2023</p>
               <div>
                 <h3>Chief Technology Officer</h3>
@@ -415,27 +474,24 @@
           </ol>
 
           <aside class="xp-aside">
-            <div class="folder reveal">
+            <div class="folder">
+              <h3 class="folder-tab">Stack</h3>
+              <p class="stack-primary">React, TypeScript, .NET, Node, SQL</p>
+              <p class="stack-more">Also React Native and Firebase for mobile, Atlassian Forge for Jira apps, Unity and C# for games, Python for automation work, AWS and Azure for hosting.</p>
+            </div>
+            <div class="folder">
               <h3 class="folder-tab">Education</h3>
               <p><strong>University of Oregon</strong><br>
               B.S. Business Administration, Entrepreneurship &amp; Marketing<br>
               Minor in Computer Information Technology</p>
             </div>
-            <div class="folder reveal">
+            <div class="folder">
               <h3 class="folder-tab">Awards</h3>
               <ul>
                 <li>Presidential Scholar</li>
                 <li>Cameron Innovation Fellow</li>
                 <li>Oregon Innovation Challenge Winner</li>
                 <li>Dean's List</li>
-              </ul>
-            </div>
-            <div class="folder reveal">
-              <h3 class="folder-tab">Toolbox</h3>
-              <ul class="tags tags-loose">
-                <li>TypeScript</li><li>JavaScript</li><li>React</li><li>React Native</li>
-                <li>Next.js</li><li>.NET</li><li>C#</li><li>C++</li><li>Python</li>
-                <li>SQL</li><li>Java</li><li>Swift</li><li>Unity</li><li>Firebase</li><li>AWS</li><li>Azure</li><li>Go</li>
               </ul>
             </div>
           </aside>
@@ -447,22 +503,27 @@
     <section class="section" id="about">
       <div class="container">
         <div class="section-head">
-          <span class="sec-num">05</span>
+          <span class="sec-num">06</span>
           <h2 class="sec-title">About</h2>
         </div>
-        <div class="about-body reveal">
+        <div class="about-body">
           <p>
-            I have a business degree and I write code for a living, which means I ask
-            "who is this for, and why would they pay" before I ask "React or Vue."
-            The degree is from the University of Oregon: entrepreneurship and marketing,
-            with a computer information technology minor. The code came from shipping
-            things: a game studio, client platforms, healthcare software, and a winter
-            working in Spanish at a startup in Madrid.
+            I have a business degree and I write software for a living, so the first
+            question I ask about a project is who it is for and what it has to earn
+            back, before the question of how to build it. The degree is from the
+            University of Oregon: entrepreneurship and marketing, with a minor in
+            computer information technology.
           </p>
           <p>
-            I've led teams of ten, and I've mentored two cohorts of interns through
-            complete release cycles. I live in Eugene,
-            Oregon. I work with clients from anywhere.
+            The rest came from shipping things. A game studio I started in 2023 and
+            still run. Client platforms delivered at a consulting firm. A Jira app I
+            built by myself, start to finish. A winter working in Spanish at a startup
+            in Madrid. Along the way I have led engineering teams of up to ten and
+            taught two groups of interns how to finish and release a product.
+          </p>
+          <p>
+            I work alone by choice. It keeps the number of people between you and the
+            person writing your software at zero.
           </p>
         </div>
       </div>
@@ -472,15 +533,20 @@
     <section class="section section-contact" id="contact">
       <div class="container">
         <div class="section-head">
-          <span class="sec-num">06</span>
+          <span class="sec-num">07</span>
           <h2 class="sec-title">Contact</h2>
         </div>
-        <a class="big-mail" href="mailto:jacksonfeist@gmail.com" target="_blank" rel="noopener">jacksonfeist<wbr>@gmail.com</a>
+        <p class="contact-line">
+          Email is the way to reach me. Tell me the task you would hand off first, and
+          I will send times for a video call.
+        </p>
+        <a class="big-mail" href="mailto:jacksonfeist@gmail.com?subject=Project%20inquiry">jacksonfeist<wbr>@gmail.com</a>
+        <p class="contact-location">
+          Based in Eugene, Oregon. Working remotely with clients anywhere.
+        </p>
         <ul class="contact-links">
-          <li><a href="tel:+15415438649">(541) 543-8649</a></li>
           <li><a href="https://www.linkedin.com/in/jacksonfeist" target="_blank" rel="noopener noreferrer">LinkedIn &#8599;</a></li>
           <li><a href="https://github.com/jacksonfeist" target="_blank" rel="noopener noreferrer">GitHub &#8599;</a></li>
-          <li><a href="Resume.pdf" target="_blank" rel="noopener">R&eacute;sum&eacute; (PDF) &#8599;</a></li>
         </ul>
       </div>
     </section>
